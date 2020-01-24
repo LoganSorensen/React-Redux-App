@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h2>Pokémon</h2>
+      <h2>Search the PokéAPI</h2>
       <Pokemon />
     </div>
   );
