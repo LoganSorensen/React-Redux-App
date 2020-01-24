@@ -21,26 +21,26 @@ const Pokemon = props => {
 
   return (
     <>
-    <div className='search-options'>
-      <div className='search'>
-        <input
-          type="text"
-          name="name"
-          value={text}
-          onChange={handleChanges}
-          placeholder="Search Pokemon..."
-        />
-        <button onClick={() => props.fetchPokemon(text.toLowerCase())}>
-          Search
-        </button>
-      </div>
-      <select onClick={handleClick}>
-        <option value="default" selected disabled hidden>
-          -Select Variant-
-        </option>
-        <option value="default">Default</option>
-        <option value="shiny">Shiny</option>
-      </select>
+      <div className="search-options">
+        <div className="search">
+          <input
+            type="text"
+            name="name"
+            value={text}
+            onChange={handleChanges}
+            placeholder="Search Pokemon..."
+          />
+          <button onClick={() => props.fetchPokemon(text.toLowerCase())}>
+            Search
+          </button>
+        </div>
+        <select onClick={handleClick}>
+          <option value="default" selected disabled hidden>
+            -Select Variant-
+          </option>
+          <option value="default">Default</option>
+          <option value="shiny">Shiny</option>
+        </select>
       </div>
       {!props.pokemon && !props.isLoading && (
         <h3>There is nothing to display</h3>
@@ -66,7 +66,6 @@ const Pokemon = props => {
           sprite={props.pokemon.sprites.front_shiny}
         />
       )}
-    
     </>
   );
 };

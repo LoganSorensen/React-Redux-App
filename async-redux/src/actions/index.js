@@ -9,7 +9,7 @@ export const fetchPokemon = name => dispatch => {
   axios
     .get(`https://pokeapi.co/api/v2/pokemon/${name}`)
     .then(res => {
-      console.log(res, 'api response')
+      console.log(res, "api response");
       dispatch({ type: "FETCHING_POKEMON_SUCCESS", payload: res.data });
     })
     .catch(err => {
