@@ -1,0 +1,26 @@
+$phone: 500px;
+
+.App {
+  @media (max-width: $phone) {
+    width: 90%;
+    margin-top: 3.5%;
+  }
+}
+
+.search-options {
+  @media (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  select {
+    width: 50%;
+    margin: 5% auto;
+  }
+}
+
+.card {
+  @media (max-width: $phone) {
+    width: 50%;
+  }
+}
