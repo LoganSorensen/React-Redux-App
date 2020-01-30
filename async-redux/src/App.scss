@@ -11,11 +11,12 @@ $phone: 500px;
   @media (max-width: $phone) {
     display: flex;
     flex-direction: column;
-  }
 
-  select {
-    width: 50%;
-    margin: 5% auto;
+    select {
+      width: 40%;
+      margin: 5% auto;
+      padding: 1.5%;
+    }
   }
 }
 
